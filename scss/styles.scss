@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: url('https://www.simpliareps.com/playground_assets/slider-image-landscape-1500w.jpg') center/cover no-repeat;
+    z-index: -1;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .hero-heading {
+            text-align: center;
+            max-width: 55%;
+
+            h2 {
+                text-align: center;
+                font-size: 3em;
+                font-weight: 600;
+
+                .hero-featured-text {
+                    color: #f80002;
+                }
+
+                .hero-sm-text {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+.btn-sr {
+    display: inline-block;
+    color: #fff;
+    padding: 0.6rem 4rem;
+    background-color: #f80002;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #f80002;
+    transition: 0.3s ease all;
+
+    &:hover {
+        color: #f80002;
+        background-color: #fff;
+        transition: 0.3s ease all;
+    }
+}
+
+.btn-sr--rev {
+    display: inline-block;
+    color: #f80002;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #f80002;
+    transition: 0.3s ease all;
+
+    &:hover {
+        color: #fff;
+        background-color: #f80002;
+        transition: 0.3s ease all;
+    }
+}
+
+.faq {
+    background-color: #FFFCEE;
+
+    h4 {
+        color: #f80002;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .card-faq {
+        padding: 1rem;
+
+        .card-text {
+            .card-title {
+                font-size: 1.4rem;
+                color: #f80002;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            .card-body {
+                font-size: 1rem;
+                font-weight: 300;
+                padding: 0;
+            }
+        }
+
+        .card-img {
+            display: flex;
+            justify-content: center;
+            max-width: 200px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.blog {
+
+    .card-img {
+        height: 350px;
+        flex: 1 1 0%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.videos {
+    h4 {
+        color: #f80002;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .video-box {
+        width: 450px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .video-title {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.blogs {
+    .card {
+        box-shadow: rgba(48, 40, 29, 0.1) 0px 4px 14px;
+        border: none;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .btn-card {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #f80002;
+        text-decoration: none;
+    }
+}
+
+.newsletter {
+    background-color: #FFFCEE;
+
+    h4 {
+        color: #f80002;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    h5 {
+        font-size: 2.3rem;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    p {
+        padding-top: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+
+    .newsletter-join {
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 400;
+    }
+}
+
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+.footer {
+    background-color: #0072c5;
+    color: #fff;
+    padding: 30px 0;
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+
+    .footer-logo {
+        max-width: 100%;
+    }
+
+    .footer-logo-box {
+        border-right: 5px solid #ffff;
+    }
+
+    .footer-contact {
+        font-size: 14px;
+    }
+
+    .footer-link-title {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-access {
+        font-size: 0.9rem;
+        font-weight: 300;
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+}
